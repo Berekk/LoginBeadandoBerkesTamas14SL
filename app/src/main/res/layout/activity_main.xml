@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bc"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/felso"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/center"
+            android:id="@+id/tvbox"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:text="Név:"
+                android:id="@+id/nev"
+                android:gravity="center_vertical"
+                android:textSize="22dp"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:text="Jelszó:"
+                android:id="@+id/tvjelszo"
+                android:layout_below="@id/nev"
+                android:gravity="center_vertical"
+                android:textSize="22dp"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_toLeftOf="@id/center"
+            android:id="@+id/tvbox2"
+            android:layout_below="@id/tvbox"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:text="Jelszó újra:"
+                android:id="@+id/jelszoujra"
+                android:gravity="center_vertical"
+                android:textSize="22dp"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:text="Teljes név:"
+                android:id="@+id/teljesNev"
+                android:layout_below="@id/jelszoujra"
+                android:gravity="center_vertical"
+                android:textSize="22dp"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:text="Telefonszám:"
+                android:id="@+id/telefonszam"
+                android:layout_below="@id/teljesNev"
+                android:gravity="center_vertical"
+                android:textSize="22dp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/center"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            ></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/center"
+            android:id="@+id/etbox"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:id="@+id/editNev"
+                android:hint="Név"
+                android:inputType="text"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:id="@+id/jelszo"
+                android:layout_below="@id/editNev"
+                android:hint="abCD1234"
+                android:inputType="textPassword"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_toRightOf="@id/center"
+            android:id="@+id/etbox2"
+            android:layout_below="@id/etbox"
+            android:visibility="visible"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:id="@+id/jelszoUjra"
+                android:hint="abCD1234"
+                android:inputType="textPassword"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_below="@id/jelszoUjra"
+                android:id="@+id/editTeljesNev"
+                android:hint="Teljes név"
+                android:inputType="text"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_below="@id/editTeljesNev"
+                android:id="@+id/editTelefonszam"
+                android:hint="06 40 123 4567"
+                android:inputType="phone"
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/also"
+        android:layout_below="@id/felso"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/megjlay"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/megj"
+                android:layout_centerVertical="true"
+                android:text="megjegyzés"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/megj"
+                android:id="@+id/csekk"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:text="belépés"
+            android:layout_below="@id/megjlay"
+            android:id="@+id/belepes"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/belepes"
+            android:text="bejelentkezés"
+            android:id="@+id/bejelentkezes"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@id/bejelentkezes"
+            android:text="regisztráció"
+            android:id="@+id/registration"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#656565</color>
+    <color name="colorPrimaryDark">#3D3D3D</color>
+    <color name="colorAccent">#040303</color>
+    <color name="bc">#5E5E5E</color>
+    <color name="red">#ff0000</color>
+    <!-- http://paletton.com/#uid=3000u0k00cF0bow01iu025x5d0u -->
+</resources>
